@@ -1,4 +1,4 @@
-package com.xero.invoicetracker.invoiceviewer.presentation.invoice_item
+package com.xero.invoicetracker.invoiceviewer.presentation.invoice_item.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.xero.invoicetracker.invoiceviewer.presentation.invoice_item.DisplayableInvoiceItem
 import com.xero.invoicetracker.ui.theme.InvoiceTrackerTheme
 
 @Composable

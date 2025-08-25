@@ -31,6 +31,14 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
+            buildConfigField("String", "INVOICE_BASE_URL", "\"https://storage.googleapis.com/xmm-homework/\"")
+            buildConfigField("String", "INVOICE_PATH", "\"invoices.json\"")
+            signingConfig = signingConfigs.getByName("debug")
+        }
+        debug {
+            buildConfigField("String", "INVOICE_BASE_URL", "\"https://storage.googleapis.com/xmm-homework/\"")
+            buildConfigField("String", "INVOICE_PATH", "\"invoices_empty.json\"")
         }
     }
     compileOptions {
@@ -39,6 +47,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

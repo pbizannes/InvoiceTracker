@@ -17,7 +17,9 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.xero.invoicetracker.invoiceviewer.domain.models.Invoice
 import com.xero.invoicetracker.invoiceviewer.domain.models.InvoiceItem
-import com.xero.invoicetracker.invoiceviewer.presentation.EmptyComponent
+import com.xero.invoicetracker.invoiceviewer.presentation.components.EmptyComponent
+import com.xero.invoicetracker.invoiceviewer.presentation.invoice_item.components.InvoiceItemComponent
+import com.xero.invoicetracker.invoiceviewer.presentation.invoice_item.components.InvoiceItemSummaryComponent
 import com.xero.invoicetracker.ui.theme.InvoiceTrackerTheme
 
 @Composable

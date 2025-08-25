@@ -1,4 +1,4 @@
-package com.xero.invoicetracker.invoiceviewer.presentation
+package com.xero.invoicetracker.invoiceviewer.presentation.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -18,8 +18,7 @@ import androidx.compose.ui.unit.sp
 import com.xero.invoicetracker.ui.theme.InvoiceTrackerTheme
 
 @Composable
-fun ErrorComponent(
-    error: String,
+fun EmptyComponent(
     modifier: Modifier = Modifier,
 ) {
     val contentColor = if (isSystemInDarkTheme()) {
@@ -34,7 +33,7 @@ fun ErrorComponent(
         horizontalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(
-            text = error,
+            text = "No items found",
             fontSize = 18.sp,
             fontWeight = FontWeight.SemiBold,
             color = contentColor
@@ -44,10 +43,9 @@ fun ErrorComponent(
 
 @PreviewLightDark
 @Composable
-private fun ErrorComponentPreview() {
+private fun EmptyComponentPreview() {
     InvoiceTrackerTheme {
-        ErrorComponent(
-            error = "No network",
+        EmptyComponent(
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.background),
         )

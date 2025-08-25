@@ -1,4 +1,4 @@
-package com.xero.invoicetracker.invoiceviewer.presentation.invoice_item
+package com.xero.invoicetracker.invoiceviewer.presentation.invoice_item.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

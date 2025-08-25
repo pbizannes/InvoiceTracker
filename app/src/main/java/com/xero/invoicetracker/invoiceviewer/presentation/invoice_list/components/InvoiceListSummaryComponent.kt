@@ -1,4 +1,4 @@
-package com.xero.invoicetracker.invoiceviewer.presentation.invoice_list
+package com.xero.invoicetracker.invoiceviewer.presentation.invoice_list.components
 
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel

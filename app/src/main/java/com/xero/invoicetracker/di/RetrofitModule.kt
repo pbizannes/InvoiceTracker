@@ -1,5 +1,6 @@
 package com.xero.invoicetracker.di
 
+import com.xero.invoicetracker.BuildConfig
 import com.xero.invoicetracker.invoiceviewer.data.source.network.InvoiceService
 import dagger.Module
 import dagger.Provides
@@ -15,7 +16,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RetrofitModule {
     @Provides
-    fun provideBaseUrl(): String = "https://storage.googleapis.com/xmm-homework/"
+    fun provideBaseUrl(): String = BuildConfig.INVOICE_BASE_URL
 
     @Provides
     @Singleton
