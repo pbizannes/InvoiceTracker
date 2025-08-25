@@ -90,6 +90,15 @@ remember state, but it saves a bit of boilerplate code.
 
 I opted not to use XML layouts, but I see that as a plus.
 
+I considered making different flavours of the debug build
+with the different URLs, but I chose not to do this since that is
+not really how URLs should be configured.
+
+Another addition I wanted to do was to make the URL configurable
+via, not just the build.gradle.kts, but via an Environment variable.
+This would then make it easy for a CI/CD pipeline to configure with
+different URLs at different stages of the pipeline.
+
 ## Other decisions
 
 I decided to use kotlinx serialization, in case this needed to
