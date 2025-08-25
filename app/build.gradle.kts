@@ -38,7 +38,7 @@ android {
         }
         debug {
             buildConfigField("String", "INVOICE_BASE_URL", "\"https://storage.googleapis.com/xmm-homework/\"")
-            buildConfigField("String", "INVOICE_PATH", "\"invoices_empty.json\"")
+            buildConfigField("String", "INVOICE_PATH", "\"invoices.json\"")
         }
     }
     compileOptions {
