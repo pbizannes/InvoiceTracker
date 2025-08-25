@@ -27,7 +27,7 @@ for this project. I then looked again at the test instructions to see the struct
 of the data, and confirmed the existing JSON matched this, which it did except for
 the priceInCents field. I dealt with this difference in the serialisation.
 
-## Architecture decisions
+### Architecture decisions
 
 I created a feature directory called "invoiceviewer" as well, even though there is only one feature.
 In a bigger project, there would be multiple features. In really big features,
@@ -42,7 +42,7 @@ between rotations. I know that some of this implementation is experimental,
 but I am pretty certain this is how things are going in Android. The rotation
 should work quite well.
 
-## UI decisions
+### UI decisions
 
 MVVM of course! Although, this is a bit like MVI without the events being
 sent from the UI. Either way, there is reactive observation of the view
@@ -56,7 +56,7 @@ I tested DarkMode and LightMode on the emulator using these commands:
 I also ran this on a Pixel 6 device. It looks much better on the
 device! However, I did not focus too much on making this look good.
 
-## Third Party code
+### Third Party code
 
 Third party code I used in the app:
 - retrofit
@@ -67,13 +67,13 @@ Third party code I used in the app:
   - I could have used the new HttpClient classes, but I opted for retrofit which includes this
 
 
-## Tests
+### Tests
 
 I added tests of the Repository and the ViewModel. I considered using
 Mockk for this, since I have used it before quite a bit, but it in
 the end I opted for the regular JUnit and Mockito classes.
 
-## Trade-offs
+### Trade-offs
 
 I would have liked to save the items in a Room database. I was
 thinking of this when I created the directory source/local, but
@@ -99,7 +99,7 @@ via, not just the build.gradle.kts, but via an Environment variable.
 This would then make it easy for a CI/CD pipeline to configure with
 different URLs at different stages of the pipeline.
 
-## Other decisions
+### Other decisions
 
 I decided to use kotlinx serialization, in case this needed to
 be a kotlin Multiplatform module or a part thereof, and I changed the
