@@ -21,6 +21,6 @@
 #-renamesourcefileattribute SourceFile
 
 # Keep classes so release version finds them after R8 stripping
--keep class com.xero.invoicetracker.domain.models.** { *; }
+-keep class au.com.invoicetracker.domain.models.** { *; }
 -keep class retrofit2.** { *; }
 -keep class com.google.gson.** { *; }

@@ -11,11 +11,11 @@ plugins {
 }
 
 android {
-    namespace = "com.xero.invoicetracker"
+    namespace = "au.com.invoicetracker"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.xero.invoicetracker"
+        applicationId = "au.com.invoicetracker"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
